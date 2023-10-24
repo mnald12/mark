@@ -1,0 +1,154 @@
+.home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 60px;
+    padding: 50px;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .hl {
+    width: 320px;
+    height: auto;
+    padding: 10px;
+    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+    background-size: 400%;
+    animation: glower 20s linear infinite;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    clip-path: polygon(0 28%, 100% 0, 64% 33%, 100% 71%, 0 100%, 44% 67%);
+    transition: 0.6;
+}
+
+@keyframes glower {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.home .hl img {
+    width: 300px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    animation: animate2 2s ease-out;
+    clip-path: polygon(0 28%, 100% 0, 64% 33%, 100% 71%, 0 100%, 44% 67%);
+}
+
+@keyframes animate {
+    from {
+        clip-path: polygon(100% 100%, 0 38%, 100% 14%, 51% 0, 100% 80%, 0 0);
+    }
+
+    to {
+        clip-path: polygon(0 28%, 100% 0, 64% 33%, 100% 71%, 0 100%, 44% 67%);
+    }
+}
+
+@keyframes animate2 {
+    from {
+        clip-path: polygon(3% 66%, 56% 0, 96% 41%, 0 90%, 99% 100%, 4% 0);
+    }
+
+    to {
+        clip-path: polygon(0 28%, 100% 0, 64% 33%, 100% 71%, 0 100%, 44% 67%);
+    }
+}
+
+.hr {
+    width: 62%;
+    height: auto;
+    padding: 12px;
+    color: rgb(157, 161, 164);
+    z-index: 5;
+}
+
+.hr h2 {
+    font-size: 60px;
+    font-family: KOMTIT__;
+}
+
+.hr p {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.btns {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    animation: reveal 5s ease-out;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btns button {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background: linear-gradient(-45deg, rgba(240, 248, 255, 0.648), rgba(0, 0, 0, 0.452) 100%);
+    color: #0a0a0a;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: 1s;
+    position: relative;
+    border-left: 1px solid azure;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btns button:hover {
+    color: rgba(240, 255, 255, 0.788);
+    background: linear-gradient(-45deg, rgba(240, 248, 255, 0.648), rgba(0, 0, 0, 0.452) 30%);
+}
+
+@media (max-width: 665px) {
+    .home {
+        padding: 20px 10px;
+        flex-wrap: wrap;
+    }
+
+    .home .hl {
+        width: 280px;
+    }
+
+    .home .hl img {
+        width: 260px;
+    }
+
+    .hr {
+        width: 100%;
+    }
+
+    .hr h2 {
+        font-size: 30px;
+    }
+
+    .hr p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .btns button {
+        padding: 8px 18px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+}

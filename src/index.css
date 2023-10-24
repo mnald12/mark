@@ -1,13 +1,158 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Aileron-Bold;
+  src: url(./fonts/Aileron-Bold.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: KGHowManyTimes;
+  src: url(./fonts/KGHowManyTimes.ttf);
+}
+
+@font-face {
+  font-family: KOMTIT__;
+  src: url(./fonts/KOMTIT__.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #d3d3d310;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Aileron-Bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #3e3e3e;
+}
+
+.page {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.big-text {
+  font-family: KOMTIT__;
+  font-size: 50px;
+  line-height: 58px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.space {
+  width: 100%;
+  height: 100px;
+}
+
+#canvas {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  position: fixed;
+  left: auto;
+  top: 0;
+  background: #3e3e3e;
+  overflow: hidden;
+  z-index: -1;
+  -webkit-transform3d: translate(0, 0, 0);
+  -moz-transform3d: translate(0, 0, 0);
+}
+
+.headline {
+  padding: 12px;
+  margin-top: 30px;
+}
+
+.headline .headlines {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.headline .mneg {
+  margin-top: -50px !important;
+}
+
+.headline .headlines .gotos {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headline .headlines .gotos button {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: large;
+  border-radius: 50%;
+  background: #555;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.headline .headlines h1 {
+  font-size: 60px;
+  padding: 12px;
+  color: #d5d5d5;
+  font-family: KGHowManyTimes;
+  position: absolute;
+  left: 12px;
+}
+
+.headline p {
+  padding: 12px 24px;
+  color: darkgray;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media (max-width: 665px) {
+  .headline {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .headline h1 {
+    font-size: 40px !important;
+    padding: 10px;
+  }
+
+  .headline p {
+    padding: 10px 22px;
+    font-size: 18px;
+  }
+
+  .headline .headlines .gotos {
+    right: 12px;
+  }
+
 }

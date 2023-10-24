@@ -1,0 +1,38 @@
+.welcome {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.welcome .padded {
+    width: 96%;
+    height: auto;
+    padding: 50px;
+    background: rgba(207, 179, 24, 0.842);
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+}
+
+.welcome .padded p {
+    font-size: 17px;
+    margin-top: 17px;
+}
+
+.welcome .padded .social {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.welcome .padded .social .btn-conatainer {
+    width: 50px;
+    height: 50px;
+}
