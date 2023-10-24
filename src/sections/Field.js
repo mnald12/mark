@@ -25,8 +25,8 @@ const Field = () => {
             <img className={r4 ? 'dblock' : 'dnone'} src={mountain} alt="mountain" />
             <div className={r4 ? 'd-flex content' : 'd-none content'}>
                 <div className="content-left">
-                    <p>"I loved watching the base of those thunderstorms, the billowing tops of the cumulonimbus, the lightning that effortlessly lit up the lake and the sky. It was gorgeous, so energetic. I was in love."</p>
-                    <small>-- Ginger Zee</small>
+                    <p>"Success is like a lightning bolt. It'll strike you when you least expect it, and you just have to keep the momentum going. You have to strike when the iron is hot. So for me, I just kept striking and striking to polish out the sword that I was making."</p>
+                    <small>-- Michelle Phan</small>
                 </div>
                 <div className="content-right">
                     <button onClick={() => scrollTo('contacts', 'start')}><AiOutlineArrowUp /></button>

@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    animation: showed 3s ease-in-out;
+    animation: showed 2s ease;
 }
 
 @keyframes showed {
@@ -52,7 +52,7 @@
     }
 
     to {
-        opacity: 0.8;
+        opacity: 0.7;
     }
 }
 
@@ -76,7 +76,14 @@
 
 .field .content .content-left p {
     font-size: 26px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.field .content .content-left .divider {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(240, 248, 255, 0.655);
+    margin: 30px auto;
 }
 
 .field .content .content-right {
