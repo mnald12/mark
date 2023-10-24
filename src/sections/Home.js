@@ -8,6 +8,10 @@ const Home = () => {
 
     const { ref1 } = useContext(Data)
 
+    const scrollTo = (id, block) => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: block, inline: 'nearest' })
+    }
+
     return (
         <div ref={ref1} id='about'>
             <div className='headline'>
@@ -26,7 +30,7 @@ const Home = () => {
                     <p>A dedicated web developer with a strong commitment to delivering exceptional results. With a focus on clean code, responsive design, and user-centric development, I strive to create websites that not only look great but also perform brilliantly.</p>
                     <div className='btns'>
                         <button className='res'>Resume</button>
-                        <button className='con'>Contact me</button>
+                        <button onClick={() => scrollTo('contacts', 'start')} className='con'>Contact me</button>
                     </div>
                 </div>
             </div>

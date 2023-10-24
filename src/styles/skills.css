@@ -53,6 +53,7 @@
         height: 100px;
         padding: 12px 0;
         gap: 12px;
+        margin-top: 0;
         margin-bottom: 20px;
         border-left: 26px solid transparent;
         border-right: 26px solid transparent;

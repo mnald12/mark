@@ -60,7 +60,10 @@ const skills = [
 const Skills = () => {
     return (
         <>
-            <div className='headline mneg'>
+            <div className='headline'>
+                <div className='headlines'>
+                    <h1>My Skills</h1>
+                </div>
                 <p>Coupled with a comprehensive skill set and years of experience, I am well-prepared to deliver a top-notch website tailored to the unique needs of your business, ensuring it stands out in the digital landscape and effectively communicates your brand's identity and offerings.</p>
             </div>
             <div className="skills">
