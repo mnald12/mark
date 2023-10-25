@@ -18,6 +18,8 @@ const Contact = () => {
 
     const form = useRef()
 
+    const [infoText, setInfoText] = useState(null)
+
     const sendEmail = (e) => {
         e.preventDefault()
         emailjs.sendForm('service_manmxhm', 'template_mjdoi5b', form.current, 'W4QLjciGHEj19CYT5')
@@ -25,10 +27,22 @@ const Contact = () => {
                 setName('')
                 setEmail('')
                 setMsg('')
-                // document.getElementById('msg-alert').style.display = 'block'
-                // setTimeout(() => document.getElementById('msg-alert').style.display = 'none', 2000)
+                setInfoText({
+                    status: 'success',
+                    text: 'Your message has been successfully sent. Thank you for taking the time to reach out to me'
+                })
+                setTimeout(() => {
+                    setInfoText(null)
+                }, 10000)
             }, (error) => {
                 console.log(error.text)
+                setInfoText({
+                    status: 'failed',
+                    text: 'Sorry, Your message was not sent successfully. Please try again, Thank you!'
+                })
+                setTimeout(() => {
+                    setInfoText(null)
+                }, 10000)
             }
             )
     }
@@ -66,6 +80,9 @@ const Contact = () => {
                     </div>
                     <div className='contact-right'>
                         <form ref={form} onSubmit={sendEmail}>
+                            {infoText ? <div className={infoText.status === 'success' ? 'info-text success' : 'info-text failed'}>
+                                {infoText.text}
+                            </div> : ''}
                             <div className='form-g'>
                                 <label>Name : </label>
                                 <input name="user_name" type='text' value={name} onChange={(e) => setName(e.target.value)} required />

@@ -51,6 +51,23 @@
     padding: 12px;
 }
 
+.info-text {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    font-size: 17px;
+    color: #0a0a0a;
+    border-radius: 6px;
+}
+
+.success {
+    background-color: rgba(127, 255, 212, 0.82);
+}
+
+.failed {
+    background-color: rgba(178, 34, 34, 0.888);
+}
+
 .contact form .form-g {
     width: 100%;
     height: auto;
@@ -128,6 +145,10 @@
     .contact .contacts .contact-right {
         width: 100%;
         padding: 0;
+    }
+
+    .info-text {
+        font-size: 15px;
     }
 
 }
