@@ -1,154 +1,157 @@
 .contact {
-    width: 100%;
-    height: auto;
-    padding: 0 30px;
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
 }
 
 .contact .contacts {
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .contact .contacts .contact-left {
-    width: 39%;
-    height: auto;
-    padding: 12px;
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+  width: 39%;
+  height: auto;
+  padding: 12px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .contact .contacts .contact-left .conts {
-    text-decoration: none;
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(to top right, rgba(192, 192, 192, 0.685), #0a0a0a);
-    clip-path: polygon(15% 7%, 68% 0, 100% 20%, 88% 99%, 8% 92%, 0% 50%);
-    cursor: pointer;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    font-size: 40px;
-    color: black;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(
+    to top right,
+    rgba(192, 192, 192, 0.685),
+    #0a0a0a
+  );
+  clip-path: polygon(15% 7%, 68% 0, 100% 20%, 88% 99%, 8% 92%, 0% 50%);
+  cursor: pointer;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  font-size: 40px;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact .contacts .contact-left .conts:hover {
-    background: linear-gradient(to top right, silver, #0a0a0ac1);
+  background: linear-gradient(to top right, silver, #0a0a0ac1);
 }
 
 .contact .contacts .contact-right {
-    width: 59%;
-    padding: 12px;
+  width: 59%;
+  padding: 12px;
 }
 
 .info-text {
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    font-size: 17px;
-    color: #0a0a0a;
-    border-radius: 6px;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  font-size: 17px;
+  color: #0a0a0a;
+  border-radius: 6px;
 }
 
 .success {
-    background-color: rgba(127, 255, 212, 0.82);
+  background-color: rgba(127, 255, 212, 0.82);
 }
 
 .failed {
-    background-color: rgba(178, 34, 34, 0.888);
+  background-color: rgba(178, 34, 34, 0.888);
 }
 
 .contact form .form-g {
-    width: 100%;
-    height: auto;
-    position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .contact form .form-g label {
-    font-size: larger;
-    display: block;
-    margin: 10px 0;
-    color: grey;
+  font-size: larger;
+  display: block;
+  margin: 10px 0;
+  color: grey;
 }
 
 .contact form .form-g input,
 .contact form .form-g textarea {
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    font-size: 18px;
-    border-radius: 3px;
-    border: none;
-    outline: none;
-    background: transparent;
-    caret-color: silver;
-    color: silver;
-    border: 3px solid dimgrey;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  caret-color: silver;
+  color: silver;
+  border: 1.5px solid dimgrey;
 }
 
 .contact form .form-g textarea {
-    min-height: 220px;
+  min-height: 220px;
 }
 
 .contact form .form-g button {
-    border: none;
-    outline: none;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 20px;
-    right: 16px;
-    opacity: 0.6;
-    background: transparent;
-    font-size: 26px;
-    color: silver;
-    transition: 0.6s;
+  border: none;
+  outline: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 16px;
+  opacity: 0.6;
+  background: transparent;
+  font-size: 26px;
+  color: silver;
+  transition: 0.6s;
 }
 
 .contact form .form-g button:hover {
-    transform: scale(1.1);
-    opacity: 1;
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 @media (max-width: 665px) {
-    .contact .contacts {
-        padding: 12px 0;
-    }
+  .contact .contacts {
+    padding: 12px 0;
+  }
 
-    .contact .contacts .contact-left {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        padding-top: 20px;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
+  .contact .contacts .contact-left {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-top: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 
-    .contact .contacts .contact-left .conts {
-        text-decoration: none;
-        width: 80px;
-        height: 80px;
-        font-size: 26px;
-    }
+  .contact .contacts .contact-left .conts {
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+  }
 
-    .contact .contacts .contact-right {
-        width: 100%;
-        padding: 0;
-    }
+  .contact .contacts .contact-right {
+    width: 100%;
+    padding: 0;
+  }
 
-    .info-text {
-        font-size: 15px;
-    }
-
+  .info-text {
+    font-size: 15px;
+  }
 }

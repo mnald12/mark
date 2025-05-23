@@ -13,6 +13,11 @@
   src: url(./fonts/KOMTIT__.ttf);
 }
 
+@font-face {
+  font-family: Poppins-Light;
+  src: url(./fonts/Poppins-Light.otf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +45,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #3e3e3e;
+  background: #1a1a1d;
 }
 
 .page {
@@ -67,12 +72,11 @@ button {
 
 #canvas {
   width: 100%;
-  max-width: 1400px;
   height: 100vh;
   position: fixed;
   left: auto;
   top: 0;
-  background: #3e3e3e;
+  background: #1a1a1d;
   overflow: hidden;
   z-index: -1;
   -webkit-transform3d: translate(0, 0, 0);
@@ -82,6 +86,7 @@ button {
 .headline {
   padding: 12px;
   margin-top: 30px;
+  margin-bottom: 12px;
 }
 
 .headline .headlines {
@@ -118,12 +123,11 @@ button {
   justify-content: center;
 }
 
-
 .headline .headlines h1 {
-  font-size: 60px;
+  font-size: 50px;
   padding: 12px;
   color: #d5d5d5;
-  font-family: KGHowManyTimes;
+  font-family: Poppins-Light;
   position: absolute;
   left: 12px;
 }
@@ -142,7 +146,7 @@ button {
   }
 
   .headline h1 {
-    font-size: 40px !important;
+    font-size: 30px !important;
     padding: 10px;
   }
 
@@ -154,5 +158,4 @@ button {
   .headline .headlines .gotos {
     right: 12px;
   }
-
 }
