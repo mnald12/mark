@@ -22,6 +22,7 @@
   transition: 0.5s;
   position: relative;
   padding: 20px;
+  cursor: pointer;
 }
 
 .works .work:hover {

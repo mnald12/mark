@@ -104,24 +104,31 @@
   min-height: 220px;
 }
 
+.form-g .btn-conts {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
 .contact form .form-g button {
   border: none;
   outline: none;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 20px;
-  right: 16px;
   opacity: 0.6;
-  background: transparent;
-  font-size: 26px;
+  background: #3e3e3e;
+  font-size: 20px;
   color: silver;
   transition: 0.6s;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 6px;
 }
 
 .contact form .form-g button:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
   opacity: 1;
 }
 
