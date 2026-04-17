@@ -3,7 +3,7 @@ import me from "../img/me.jpg";
 import { useContext } from "react";
 import { Data } from "../Page";
 import Goto from "../components/Goto";
-import resume from "../files/mnald12v2.pdf";
+import resume from "../files/mnald2k26resume.pdf";
 
 const Home = () => {
   const { ref1 } = useContext(Data);
